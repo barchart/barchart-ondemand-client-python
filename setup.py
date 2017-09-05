@@ -11,4 +11,5 @@ setup(
         'requests>=2.3.0'
     ],
     license='LICENSE.txt',
+    keywords=['market-data', 'futures', 'forex', 'stock-market', 'stock-quotes', 'historical-data', 'price-data'],
     packages=['ondemand'])
