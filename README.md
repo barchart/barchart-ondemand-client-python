@@ -26,6 +26,9 @@ resp = od.history('AAPL', 'minutes', maxRecords=50, interval=1)
 
 # generic request by API name
 resp = od.get('getQuote', symbols='AAPL,EXC', fields='bid,ask')
+
+# or, get the crypto
+resp = od.crypto('^BTCUSD,^LTCUSD')
 ```
 
 ### Version

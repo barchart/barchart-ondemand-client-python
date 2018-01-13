@@ -8,6 +8,12 @@ import sys
 od = ondemand.OnDemandClient(api_key=sys.argv[1])
 od.debug = True
 
+# Get that Crypto
+resp = od.crypto('^BTCUSD,^LTCUSD')
+print('')
+print(resp)
+print('')
+
 # Get a Quote
 resp = od.quote('AAPL', 'bid,ask')
 print('')

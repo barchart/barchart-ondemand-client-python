@@ -226,5 +226,11 @@ class OnDemandClient(object):
         kwargs.update(dict(symbol=symbol))
         return self._do_call(self.endpoint + 'getETFConstituents.json', kwargs)
 
+    def crypto(self, symbols, **kwargs):
+        params = dict(symbols=symbols)
+        kwargs.update(params)
+        return self._do_call(self.endpoint + 'getCrypto.json', kwargs)
+
+
     def get(self, api_name, **kwargs):
         return self._do_call(self.endpoint + api_name + '.json', kwargs)
