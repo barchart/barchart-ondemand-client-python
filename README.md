@@ -4,6 +4,14 @@ Get access to market data and the OnDemand APIs in just a few lines of code.
 
 ### Installation
 
+#### From pypi
+
+```
+pip install ondemand
+```
+
+#### From Source
+
 ```
 python setup.py install
 ```
