@@ -23,6 +23,10 @@ import ondemand
 
 od = ondemand.OnDemandClient(api_key='CHANGE_ME')
 
+# or if you are using a free sandbox API
+
+od = ondemand.OnDemandClient(api_key='CHANGE_ME', end_point='https://marketdata.websol.barchart.com/')
+
 # get quote data for Apple and Microsoft
 quotes = od.quote('AAPL,MSFT')['results']
 
