@@ -43,6 +43,10 @@ resp = od.get('getQuote', symbols='AAPL,EXC', fields='bid,ask')
 resp = od.crypto('^BTCUSD,^LTCUSD')
 ```
 
+### Interactive Python Notebook Example
+
+https://colab.research.google.com/drive/1D8389Q8qQzbppqFxwpUOobheZ2jb3Gp4
+
 ### Version
 
 - 1.0 - 7/27/2017 -- init
