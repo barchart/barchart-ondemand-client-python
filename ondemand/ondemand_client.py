@@ -28,10 +28,12 @@ class OnDemandClient(object):
 
     debug = False
 
-    def __init__(self, api_key=None, end_point='https://ondemand.websol.barchart.com/'):
+    def __init__(self, api_key=None, end_point='https://ondemand.websol.barchart.com/', debug=False):
         self.endpoint = end_point
         self.api_key = api_key
-        print('Barchart OnDemand Client: ' + self.endpoint)
+        self.debug = debug
+        if self.debug:
+            print('Barchart OnDemand Client: ' + self.endpoint)
 
     def _do_call(self, url, params):
         if not isinstance(params, dict):
