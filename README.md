@@ -27,6 +27,10 @@ od = ondemand.OnDemandClient(api_key='CHANGE_ME')
 
 od = ondemand.OnDemandClient(api_key='CHANGE_ME', end_point='https://marketdata.websol.barchart.com/')
 
+# if you want data in a format other than json. xml also supported
+
+od = ondemand.OnDemandClient(api_key='CHANGE_ME', format='csv')
+
 # get quote data for Apple and Microsoft
 quotes = od.quote('AAPL,MSFT')['results']
 
