@@ -1,3 +1,3 @@
 from .ondemand_client import OnDemandClient, OnDemandError
 
-VERSION = '1.1.0'
+VERSION = '1.1.1'
