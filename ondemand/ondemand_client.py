@@ -223,6 +223,9 @@ class OnDemandClient(object):
     def weather(self, **kwargs):
         return self._do_call(self.endpoint + 'getWeather.' + self.format, kwargs)
 
+    def grain_bids(self, **kwargs):
+        return self._do_call(self.endpoint + 'getGrainBids.' + self.format, kwargs)
+
     def usda_grain_prices(self, **kwargs):
         return self._do_call(self.endpoint + 'getUSDAGrainPrices.' + self.format, kwargs)
 
