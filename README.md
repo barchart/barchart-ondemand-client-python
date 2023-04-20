@@ -6,6 +6,8 @@ Get access to market data and the OnDemand APIs in just a few lines of code.
 
 #### From pypi
 
+[![PyPI version](https://badge.fury.io/py/ondemand.svg)](https://badge.fury.io/py/ondemand)
+
 ```
 pip install ondemand
 ```
